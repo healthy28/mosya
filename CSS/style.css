@@ -1,0 +1,307 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+
+
+/*================
+ PC用のスタイル 
+=================*/
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+
+   
+  /* ヘッダー */
+  header {
+    font-family: "太ゴB101",sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ナビゲーションのレイアウト */
+  #logo {
+    font-size: 50px;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    padding:10px 20px 10px 20px;/*内側余白*/
+    border:solid 2px #0d0d0d;
+  }
+
+  #logo:link {
+    color: #0d0d0d;
+  }
+  #logo:visited {
+    color: #0d0d0d;
+    border:2px solid #0d0d0d;
+  }
+  #logo:hover {
+    color: #0d0d0d;
+  }
+  #logo:active {
+    color: #0d0d0d;
+  }
+
+  #nav-pc {
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 200px;
+  }
+
+  #nav-pc > a {
+    text-decoration: none;
+    margin-left: 50px;
+  }
+
+  #nav-pc > a:link {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:visited {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:hover {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:active {
+    color: #0d0d0d;
+  }
+
+  #main-visual {
+  position: relative;
+  height: 550px;
+  margin-bottom: 50px;
+  }
+
+  #main-visual > img {
+    width: 100%;
+  }
+
+  h2 {
+    margin-top: 150px;
+    font-size: 50px;
+    text-align:center;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  #about {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-photo {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border-radius: 150px 150px 150px 150px;
+  }
+
+  #about-flex > div {
+    font-size: 20px;
+  }
+
+  #works {
+    width: auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+  }
+
+  p span {
+    display: block;
+  }
+
+  #works-left > img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 0 auto 0;
+  }
+  #works-center > img {
+    width: 90%;
+    height: auto;
+  }
+  #works-right > img {
+    width: 90%;
+    height: auto;
+  }
+
+  #works-left > p {
+    font-size: 30px;
+    text-align:center;
+    margin-right: 50px;
+  }
+  #works-center > p {
+    font-size: 30px;
+    text-align:center;
+    margin-right: 50px;
+  }
+  #works-right > p {
+    font-size: 30px;
+    text-align:center;
+    margin-right: 50px;
+  }
+
+  footer {
+    text-align:center;
+  }
+}
+
+/* ================
+ スマートフォン用のスタイル
+================= */
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  /* ヘッダー */
+  header {
+    font-family: "太ゴB101",sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ナビゲーションのレイアウト */
+  #logo {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    padding:5px 10px 5px 10px;/*内側余白*/
+    border:solid 2px #0d0d0d;
+  }
+
+  #logo:link {
+    color: #0d0d0d;
+  }
+  #logo:visited {
+    color: #0d0d0d;
+    border:2px solid #0d0d0d;
+  }
+  #logo:hover {
+    color: #0d0d0d;
+  }
+  #logo:active {
+    color: #0d0d0d;
+  }
+
+  #nav-pc {
+    display: flex;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 200px;
+  }
+
+  #nav-pc > a {
+    text-decoration: none;
+    margin-left: 50px;
+  }
+
+  #nav-pc > a:link {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:visited {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:hover {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:active {
+    color: #0d0d0d;
+  }
+
+  #main-visual {
+  position: relative;
+  height: 250px;
+  margin-bottom: 50px;
+  }
+
+  #main-visual > img {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align:center;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  #about {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-photo {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-right: 50px;
+    border-radius: 150px 150px 150px 150px;
+  }
+
+  #about-flex > div {
+    font-size: 16px;
+  }
+
+  #works {
+    width: auto;
+    text-align: center;
+  }
+
+  #works-left > img {
+    width: 30em;
+    height: auto;
+  }
+  #works-center > img {
+    width: 30em;
+    height: auto;
+  }
+  #works-right > img {
+    width: 30em;
+    height: auto;
+  }
+
+  #works-left > p {
+    margin-top: 3px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-align:center;
+  }
+  #works-center > p {
+    margin-top: 3px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-align:center;
+  }
+  #works-right > p {
+    margin-top: 3px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-align:center;
+  }
+
+  footer {
+    text-align:center;
+  }
+}
